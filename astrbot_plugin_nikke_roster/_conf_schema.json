@@ -3,7 +3,7 @@
     "type": "string",
     "description": "网页端地址（用户去这里生成/导出分享码）",
     "hint": "同时用在 /妮姬帮助 和 /妮姬网址 里。留空则 /妮姬网址 会提示未配置。改完需重载插件。",
-    "default": ""
+    "default": "https://kurumi-cn.github.io/nikke-photos/#/"
   },
   "cmd_help": {
     "type": "bool",
