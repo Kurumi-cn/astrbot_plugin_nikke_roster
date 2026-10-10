@@ -1,0 +1,18 @@
+# 运行时产物
+__pycache__/
+*.py[cod]
+
+# 插件运行时数据（服务器上另有自己的副本，不进版本控制）
+astrbot_plugin_nikke_roster/data/
+
+# 出图预览与立绘对齐对比的生成产物（本地看效果用，可随时重跑生成）
+seed/preview/
+seed/art-align/
+
+# 素材包（约 100MB）：不进 Git，发布时打进 zip 或走单独下载（见 README「素材」）
+seed/assets.tar
+
+# 编辑器 / 系统杂项
+.vscode/
+.DS_Store
+Thumbs.db
