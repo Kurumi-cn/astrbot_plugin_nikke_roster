@@ -5,16 +5,172 @@
     "hint": "同时用在 /妮姬帮助 和 /妮姬网址 里。留空则 /妮姬网址 会提示未配置。改完需重载插件。",
     "default": ""
   },
-  "help_use_forward": {
+  "cmd_help": {
     "type": "bool",
-    "description": "群聊里把帮助发成合并转发（聊天记录）",
-    "hint": "帮助较长，直接发会刷屏。开启后群聊里发成一条合并转发；私聊始终发纯文本。协议端不支持（非 OneBot）时会自动退回纯文本。",
+    "description": "允许使用 /妮姬帮助",
+    "hint": "关掉后该命令不响应",
     "default": true
   },
-  "random_skin": {
+  "cmd_url": {
     "type": "bool",
-    "description": "面板出图随机皮肤",
-    "hint": "开启后 /妮姬面板 每次从该角色的立绘里随机挑一张（含默认立绘），有多套衣服的角色会随机换装；只有一张立绘的角色不受影响。关掉则固定用默认立绘。改完需重载插件。",
+    "description": "允许使用 /妮姬网址",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_selfcheck": {
+    "type": "bool",
+    "description": "允许使用 /妮姬自检",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_import": {
+    "type": "bool",
+    "description": "允许使用 /妮姬导入",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_import_json": {
+    "type": "bool",
+    "description": "允许使用 /妮姬导入json",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_list": {
+    "type": "bool",
+    "description": "允许使用 /妮姬列表",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_profile_show": {
+    "type": "bool",
+    "description": "允许使用 /妮姬存档",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_profile_new": {
+    "type": "bool",
+    "description": "允许使用 /妮姬新建存档",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_profile_delete": {
+    "type": "bool",
+    "description": "允许使用 /妮姬删除存档",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_profile_rename": {
+    "type": "bool",
+    "description": "允许使用 /妮姬修改存档",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_profile_switch": {
+    "type": "bool",
+    "description": "允许使用 /妮姬切换存档",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_panel": {
+    "type": "bool",
+    "description": "允许使用 /妮姬面板",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_stats": {
+    "type": "bool",
+    "description": "允许使用 /妮姬练度统计",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_group_rank": {
+    "type": "bool",
+    "description": "允许使用 /妮姬群排行",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_stats_setting": {
+    "type": "bool",
+    "description": "允许使用 /妮姬练度统计设置",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_sync": {
+    "type": "bool",
+    "description": "允许使用 /妮姬同步器",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_affection": {
+    "type": "bool",
+    "description": "允许使用 /妮姬好感",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_star": {
+    "type": "bool",
+    "description": "允许使用 /妮姬星级",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_core": {
+    "type": "bool",
+    "description": "允许使用 /妮姬核心",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_skill1": {
+    "type": "bool",
+    "description": "允许使用 /妮姬技能1",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_skill2": {
+    "type": "bool",
+    "description": "允许使用 /妮姬技能2",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_burst": {
+    "type": "bool",
+    "description": "允许使用 /妮姬爆裂",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_all_affection": {
+    "type": "bool",
+    "description": "允许使用 /妮姬一键好感度",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_all_star": {
+    "type": "bool",
+    "description": "允许使用 /妮姬一键星级",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_all_core": {
+    "type": "bool",
+    "description": "允许使用 /妮姬一键核心",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_all_skill1": {
+    "type": "bool",
+    "description": "允许使用 /妮姬一键技能1",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_all_skill2": {
+    "type": "bool",
+    "description": "允许使用 /妮姬一键技能2",
+    "hint": "关掉后该命令不响应",
+    "default": true
+  },
+  "cmd_all_burst": {
+    "type": "bool",
+    "description": "允许使用 /妮姬一键爆裂",
+    "hint": "关掉后该命令不响应",
     "default": true
   }
 }

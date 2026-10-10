@@ -283,7 +283,7 @@ def main() -> int:
         cardmodel = module.cardmodel
         check("随机皮肤默认开启", plugin._random_skin() is True, repr(plugin.config))
         schema = json.loads((PLUGIN_DIR / "_conf_schema.json").read_text(encoding="utf-8"))
-        check("配置里有随机皮肤开关", "random_skin" in schema, repr(list(schema)))
+        check("配置里不再有随机皮肤开关", "random_skin" not in schema, repr(list(schema)))
 
         multi = next((c for c in plugin.roster.characters if len(cardmodel.artwork_entries(c)) > 1), None)
         single = next((c for c in plugin.roster.characters if len(cardmodel.artwork_entries(c)) == 1), None)
@@ -789,7 +789,7 @@ def main() -> int:
             print(f"  FAILED: {item}")
         return 1 if failures else 0
     finally:
-        # 测试 QQ 的存档（含迁移/删除备份）与出图都不留在服务器上
+        # 测试 QQ 的存档（含迁移备份）与出图都不留在服务器上
         for uid in (TEST_UID, "10002", *RANK_UIDS):
             path = store_mod.user_store_path(uid)
             targets = [
@@ -797,7 +797,6 @@ def main() -> int:
                 path.with_name(path.name + ".premigrate.bak"),
                 path.with_name(path.name + ".tmp"),
             ]
-            targets += list(path.parent.glob(path.name + ".deleted-*"))
             for item in targets:
                 if item.is_file():
                     item.unlink()

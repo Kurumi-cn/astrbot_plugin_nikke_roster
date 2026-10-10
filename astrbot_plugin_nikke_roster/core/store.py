@@ -44,8 +44,6 @@
 同进程内按文件路径分配 ``threading.Lock``；写盘先落 ``.json.tmp`` 再
 ``os.replace`` 原子替换（同目录 rename 在同一文件系统上是原子的），
 所以任何时刻读到的都是完整的上一版或完整的新版，不会是写了一半的 JSON。
-删除存档前会先把该档另存 ``<QQ>.deleted-<名字>-<时间>.bak`` 底片
-（写不出备份就拒绝删除）。
 """
 from __future__ import annotations
 
@@ -392,10 +390,7 @@ def rename_profile(uid, old, new) -> tuple[str, str]:
 
 
 def delete_profile(uid, name) -> tuple[str, str]:
-    """删除存档，返回 ``(被删的规范名, 删除后的当前存档名)``。
-
-    删除前先把该档另存一份底片；写不出备份就拒绝删除。
-    """
+    """删除存档，返回 ``(被删的规范名, 删除后的当前存档名)``。"""
     path = user_store_path(uid)
     with _lock_for(path):
         wrapper = _read_wrapper(path)
@@ -405,23 +400,11 @@ def delete_profile(uid, name) -> tuple[str, str]:
             raise StoreError(_missing_message(name, profiles))
         if len(profiles) <= 1:
             raise StoreError("这是最后一个存档，不能删除（至少保留 1 个）。")
-        _backup_profile(path, target, profiles[target])
         del profiles[target]
         if wrapper["current"] == target:
             wrapper["current"] = next(iter(profiles))
         _write(path, wrapper)
         return target, wrapper["current"]
-
-
-def _backup_profile(path: Path, name: str, store: dict) -> None:
-    """删除前的底片：``<QQ>.deleted-<名字>-<时间>.bak``。"""
-    safe = _UNSAFE_NAME.sub("_", name)[:40] or "profile"
-    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    backup = path.parent / f"{path.stem}.deleted-{safe}-{stamp}.bak"
-    try:
-        backup.write_text(json.dumps(store, ensure_ascii=False, indent=2), encoding="utf-8")
-    except Exception as exc:
-        raise StoreError(f"删除失败：备份没能写入（{type(exc).__name__}: {exc}）") from exc
 
 
 # ── 存档内的操作（都在 update 的 mutator 里用） ───────────────────────

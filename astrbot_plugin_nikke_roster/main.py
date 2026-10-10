@@ -196,6 +196,10 @@ class NikkeRosterPlugin(Star):
     def _random_skin(self) -> bool:
         return bool((self.config or {}).get("random_skin", True))
 
+    def _switch(self, key: str) -> bool:
+        """命令开关（配置项 cmd_*；缺省全开）"""
+        return bool((self.config or {}).get(key, True))
+
     def _table(self) -> roster_mod.Roster:
         if self.roster is None:
             self.roster = roster_mod.load()
@@ -287,6 +291,8 @@ class NikkeRosterPlugin(Star):
         合并转发失败（非 OneBot 平台、取不到 self_id、协议端拒绝）时
         自动退回纯文本 —— 宁可长一点，也不能让用户看不到帮助。
         """
+        if not self._switch("cmd_help"):
+            return
         web = self._web_url()
         gid = ""
         try:
@@ -306,6 +312,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬网址")
     async def nikke_url(self, event: AstrMessageEvent):
         """要网页端地址（去那里录入练度并导出分享码）。"""
+        if not self._switch("cmd_url"):
+            return
         web = self._web_url()
         if not web:
             yield event.plain_result(
@@ -320,6 +328,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬导入")
     async def nikke_import(self, event: AstrMessageEvent):
         """导入分享码：角色数据（补练度）和表格配置（定名单与行序）都走这里。"""
+        if not self._switch("cmd_import"):
+            return
         args = _args(event, "妮姬导入")
         if not args:
             yield event.plain_result(texts.bad_args("/妮姬导入", "<分享码>"))
@@ -373,6 +383,8 @@ class NikkeRosterPlugin(Star):
         命令名带 ``json`` 不会和 ``妮姬导入`` 抢 —— 框架的命令过滤器是
         「整串相等」或「命令名 + 空格」才算命中，``妮姬导入json`` 两条都不占。
         """
+        if not self._switch("cmd_import_json"):
+            return
         key = _session_key(event)
         if not key:
             yield event.plain_result(texts.import_file_failed("极端异常情况。当前无法取得会话标识，请重试！"))
@@ -536,6 +548,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬存档")
     async def nikke_profile(self, event: AstrMessageEvent):
         """查看当前存档与全部存档。"""
+        if not self._switch("cmd_profile_show"):
+            return
         uid = self._uid(event)
         snapshot = store_mod.profiles_snapshot(uid)
         profiles = snapshot["profiles"]
@@ -553,6 +567,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬新建存档")
     async def nikke_profile_create(self, event: AstrMessageEvent):
         """新建一个存档（不自动切过去）。"""
+        if not self._switch("cmd_profile_new"):
+            return
         args = _args(event, "妮姬新建存档")
         if len(args) != 1:
             yield event.plain_result(texts.bad_args(
@@ -567,7 +583,9 @@ class NikkeRosterPlugin(Star):
 
     @filter.command("妮姬删除存档")
     async def nikke_profile_delete(self, event: AstrMessageEvent):
-        """删除一个存档（删当前档会自动切到剩余第一个；删除前自动备份）。"""
+        """删除一个存档（删当前档会自动切到剩余第一个）。"""
+        if not self._switch("cmd_profile_delete"):
+            return
         args = _args(event, "妮姬删除存档")
         if len(args) != 1:
             yield event.plain_result(texts.bad_args(
@@ -586,6 +604,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬修改存档")
     async def nikke_profile_rename(self, event: AstrMessageEvent):
         """修改存档名。"""
+        if not self._switch("cmd_profile_rename"):
+            return
         args = _args(event, "妮姬修改存档")
         if len(args) != 2:
             yield event.plain_result(texts.bad_args(
@@ -601,6 +621,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬切换存档")
     async def nikke_profile_switch(self, event: AstrMessageEvent):
         """切换当前使用的存档。"""
+        if not self._switch("cmd_profile_switch"):
+            return
         args = _args(event, "妮姬切换存档")
         if len(args) != 1:
             yield event.plain_result(texts.bad_args(
@@ -618,8 +640,10 @@ class NikkeRosterPlugin(Star):
     async def nikke_list(self, event: AstrMessageEvent):
         """看自己已导入的角色：谁装备录完了（能进统计表）、谁还没录。
 
-        有数据时发成合并转发（群聊/私聊都发）；转发不可用则退回纯文本（空档也用纯文本）。
+        始终发成合并转发（群聊/私聊都发，空档也照发）；转发不可用则退回纯文本。
         """
+        if not self._switch("cmd_list"):
+            return
         uid = self._uid(event)
         store = store_mod.load(uid)
         table = self._table()
@@ -637,25 +661,30 @@ class NikkeRosterPlugin(Star):
             })
         rows.sort(key=lambda row: (not row["complete"], row["name"]))
         profile = store_mod.current_profile_name(uid)
-        if not rows:
-            yield event.plain_result(texts.list_empty_text(profile))
-            return
 
         requester = texts.requester_note(self._sender_name(event), uid)
         items = [("查询人", [Plain(requester)])]
-        items += [(name, [Plain(body)])
-                  for name, body in texts.list_nodes(profile, store["synchroLevel"], rows)]
+        if rows:
+            items += [(name, [Plain(body)])
+                      for name, body in texts.list_nodes(profile, store["synchroLevel"], rows)]
+        else:
+            items.append(("妮姬列表", [Plain(texts.list_empty_text(profile))]))
         try:
             if await self._send_forward_nodes(event, items):
                 return
         except Exception as exc:
             logger.warning("[%s] 列表合并转发失败，退回纯文本：%s", PLUGIN_NAME, exc)
-        yield event.plain_result(texts.list_plain_text(profile, store["synchroLevel"], rows))
+        if rows:
+            yield event.plain_result(texts.list_plain_text(profile, store["synchroLevel"], rows))
+        else:
+            yield event.plain_result(texts.list_empty_text(profile))
 
     # ── /妮姬面板 ────────────────────────────────────────────────────
     @filter.command("妮姬面板")
     async def nikke_panel(self, event: AstrMessageEvent):
         """出角色面板图（与网页端「导出图片」同一版式，2x = 1472×2192）。"""
+        if not self._switch("cmd_panel"):
+            return
         args = _args(event, "妮姬面板")
         if not args:
             yield event.plain_result(texts.bad_args("/妮姬面板", "<角色>"))
@@ -728,6 +757,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬练度统计")
     async def nikke_stats(self, event: AstrMessageEvent):
         """出一张练度统计表。名单与行序取 /妮姬练度统计设置 的配置。"""
+        if not self._switch("cmd_stats"):
+            return
         store = store_mod.load(self._uid(event))
         codes = store["statsTable"]["nameCodes"] or self._default_table_codes(store)
         if not codes:
@@ -777,6 +808,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬练度统计设置")
     async def nikke_stats_config(self, event: AstrMessageEvent):
         """定练度统计表里有哪些角色、按什么顺序（顺序就是行序）。"""
+        if not self._switch("cmd_stats_setting"):
+            return
         args = _args(event, "妮姬练度统计设置")
         if not args:
             yield event.plain_result(texts.bad_args(
@@ -806,6 +839,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬群排行")
     async def nikke_group_rank(self, event: AstrMessageEvent):
         """本群该角色的词条排行表（每图最多 30 人；每个 QQ 15 秒一次）。"""
+        if not self._switch("cmd_group_rank"):
+            return
         gid = ""
         try:
             gid = str(event.get_group_id() or "").strip()
@@ -972,6 +1007,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬同步器")
     async def nikke_synchro(self, event: AstrMessageEvent):
         """设同步器等级（存档级，全体妮姬共用）。"""
+        if not self._switch("cmd_sync"):
+            return
         args = _args(event, "妮姬同步器")
         if not args or not re.fullmatch(r"[+-]?\d+", args[0]):
             yield event.plain_result(texts.bad_args("/妮姬同步器", "<等级 1~2000>"))
@@ -993,6 +1030,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬好感")
     async def nikke_affection(self, event: AstrMessageEvent):
         """改好感度。"""
+        if not self._switch("cmd_affection"):
+            return
         async for result in self._change_one(
             event, "妮姬好感", "<角色> <0~40>", "好感度",
             store_mod.AFFECTION_MIN, store_mod.AFFECTION_MAX,
@@ -1004,6 +1043,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬星级")
     async def nikke_grade(self, event: AstrMessageEvent):
         """改突破星级。"""
+        if not self._switch("cmd_star"):
+            return
         async for result in self._change_one(
             event, "妮姬星级", "<角色> <0~3>", "星级",
             store_mod.GRADE_MIN, store_mod.GRADE_MAX,
@@ -1015,6 +1056,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬核心")
     async def nikke_core(self, event: AstrMessageEvent):
         """改核心突破。"""
+        if not self._switch("cmd_core"):
+            return
         async for result in self._change_one(
             event, "妮姬核心", "<角色> <0~7>", "核心",
             store_mod.CORE_MIN, store_mod.CORE_MAX,
@@ -1034,18 +1077,24 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬技能1")
     async def nikke_skill1(self, event: AstrMessageEvent):
         """改技能 1。"""
+        if not self._switch("cmd_skill1"):
+            return
         async for result in self._change_skill(event, "妮姬技能1", "skill1", "技能1"):
             yield result
 
     @filter.command("妮姬技能2")
     async def nikke_skill2(self, event: AstrMessageEvent):
         """改技能 2。"""
+        if not self._switch("cmd_skill2"):
+            return
         async for result in self._change_skill(event, "妮姬技能2", "skill2", "技能2"):
             yield result
 
     @filter.command("妮姬爆裂")
     async def nikke_burst(self, event: AstrMessageEvent):
         """改爆裂技能。"""
+        if not self._switch("cmd_burst"):
+            return
         async for result in self._change_skill(event, "妮姬爆裂", "burst", "爆裂技能"):
             yield result
 
@@ -1054,6 +1103,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬一键好感度")
     async def nikke_all_affection(self, event: AstrMessageEvent):
         """一键改好感度。"""
+        if not self._switch("cmd_all_affection"):
+            return
         async for result in self._change_all(
             event, "妮姬一键好感度", "<0~40>", "好感度",
             store_mod.AFFECTION_MIN, store_mod.AFFECTION_MAX,
@@ -1064,6 +1115,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬一键星级")
     async def nikke_all_grade(self, event: AstrMessageEvent):
         """一键改星级。"""
+        if not self._switch("cmd_all_star"):
+            return
         async for result in self._change_all(
             event, "妮姬一键星级", "<0~3>", "星级",
             store_mod.GRADE_MIN, store_mod.GRADE_MAX,
@@ -1074,6 +1127,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬一键核心")
     async def nikke_all_core(self, event: AstrMessageEvent):
         """一键改核心。"""
+        if not self._switch("cmd_all_core"):
+            return
         async for result in self._change_all(
             event, "妮姬一键核心", "<0~7>", "核心",
             store_mod.CORE_MIN, store_mod.CORE_MAX,
@@ -1092,18 +1147,24 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬一键技能1")
     async def nikke_all_skill1(self, event: AstrMessageEvent):
         """一键改技能 1。"""
+        if not self._switch("cmd_all_skill1"):
+            return
         async for result in self._change_all_skill(event, "妮姬一键技能1", "skill1", "技能1"):
             yield result
 
     @filter.command("妮姬一键技能2")
     async def nikke_all_skill2(self, event: AstrMessageEvent):
         """一键改技能 2。"""
+        if not self._switch("cmd_all_skill2"):
+            return
         async for result in self._change_all_skill(event, "妮姬一键技能2", "skill2", "技能2"):
             yield result
 
     @filter.command("妮姬一键爆裂")
     async def nikke_all_burst(self, event: AstrMessageEvent):
         """一键改爆裂技能。"""
+        if not self._switch("cmd_all_burst"):
+            return
         async for result in self._change_all_skill(event, "妮姬一键爆裂", "burst", "爆裂技能"):
             yield result
 
@@ -1111,6 +1172,8 @@ class NikkeRosterPlugin(Star):
     @filter.command("妮姬自检")
     async def nikke_selftest(self, event: AstrMessageEvent):
         """框架自检：角色表 / 素材 / 字体 / PIL / 数据目录 / 别名表 / 自己的存档。"""
+        if not self._switch("cmd_selfcheck"):
+            return
         t0 = time.time()
         lines = [f"NIKKE练度统计助手 v{VERSION} 自检", ""]
 
