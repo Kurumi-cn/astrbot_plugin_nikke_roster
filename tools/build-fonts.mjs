@@ -70,6 +70,8 @@ const walk = (dir) => {
 
 // 网页端源码：角色名（roster.json）、词条名（affixTiers.js）、卡片文案（characterCard.css）
 walk(path.join(PROJECT_DIR, 'app', 'src'))
+// The plugin's checked-in roster is authoritative in a standalone checkout.
+walk(path.join(PLUGIN_DIR, 'assets', 'data'))
 // BOT 自己的源码：统计表表头、提示文案等
 walk(path.join(PLUGIN_DIR, 'core'))
 for (const file of ['main.py']) {

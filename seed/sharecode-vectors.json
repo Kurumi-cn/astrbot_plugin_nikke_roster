@@ -2172,7 +2172,7 @@
    }
   },
   {
-   "label": "单角色 5158 索林：霜雪车票",
+   "label": "单角色 5158 索林：霜之旅票",
    "code": "NKP2:AAIAAQEAyKEw-TgDCAAAAAAEmeAARBaShA",
    "expect": {
     "version": 2,
@@ -12464,6 +12464,2852 @@
    }
   },
   {
+   "label": "单角色 5181 德雷克：终极反派",
+   "code": "NKP2:AAIAAQEAyKHo-TgDCAAAAAAEmeAAt_VTjw",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5181": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "单角色 5182 吉尔提：神力兔女郎",
+   "code": "NKP2:AAIAAQEAyKHw-TgDCAAAAAAEmeAAWfEmOA",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5182": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "单角色 5183 森：疾速兔女郎",
+   "code": "NKP2:AAIAAQEAyKH4-TgDCAAAAAAEmeAAA_L1VQ",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5183": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "单角色 5184 贝洛塔：南瓜女巫",
+   "code": "NKP2:AAIAAQEAyKIA-TgDCAAAAAAEmeAAPw5acA",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5184": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "单角色 5185 玛丽安：女王",
+   "code": "NKP2:AAIAAQEAyKII-TgDCAAAAAAEmeAAZQ2JHQ",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "单角色 5186 红莲：弑神",
+   "code": "NKP2:AAIAAQEAyKIQ-TgDCAAAAAAEmeAAiwn8qg",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5186": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "单角色 5187 长发公主：圣域",
+   "code": "NKP2:AAIAAQEAyKIY-TgDCAAAAAAEmeAA0Qovxw",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5187": {
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10001 等级 1",
+   "code": "NKP2:AAIAAQkAyKIIRHycAYQAAAAAAkzwAKM2_t8",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10001,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10001 等级 15",
+   "code": "NKP2:AAIAAQkAyKIIfHycAYQAAAAAAkzwAP5MwJ0",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10001,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10002 等级 1",
+   "code": "NKP2:AAIAAQkAyKIIhHycAYQAAAAAAkzwAL7RSmM",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10002,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10002 等级 15",
+   "code": "NKP2:AAIAAQkAyKIIvHycAYQAAAAAAkzwAOOrdCE",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10002,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10003 等级 1",
+   "code": "NKP2:AAIAAQkAyKIIxHycAYQAAAAAAkzwAANc28g",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10003,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10003 等级 15",
+   "code": "NKP2:AAIAAQkAyKII_HycAYQAAAAAAkzwAF4m5Yo",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10003,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10004 等级 1",
+   "code": "NKP2:AAIAAQkAyKIJBHycAYQAAAAAAkzwAIO0jgI",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10004,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10004 等级 15",
+   "code": "NKP2:AAIAAQkAyKIJPHycAYQAAAAAAkzwAN7OsEA",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10004,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10005 等级 1",
+   "code": "NKP2:AAIAAQkAyKIJRHycAYQAAAAAAkzwAD45H6k",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10005,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10005 等级 15",
+   "code": "NKP2:AAIAAQkAyKIJfHycAYQAAAAAAkzwAGNDIes",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10005,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10006 等级 1",
+   "code": "NKP2:AAIAAQkAyKIJhHycAYQAAAAAAkzwACPeqxU",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10006,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10006 等级 15",
+   "code": "NKP2:AAIAAQkAyKIJvHycAYQAAAAAAkzwAH6klVc",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10006,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 11001 等级 1",
+   "code": "NKP2:AAIAAQkAyKIJxHycAYQAAAAAAkzwAJ5TOr4",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 11001,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 11001 等级 15",
+   "code": "NKP2:AAIAAQkAyKIJ_HycAYQAAAAAAkzwAMMpBPw",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 11001,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 13001 等级 1",
+   "code": "NKP2:AAIAAQkAyKIKBHycAYQAAAAAAkzwAP_Vq9k",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 13001,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 13001 等级 15",
+   "code": "NKP2:AAIAAQkAyKIKPHycAYQAAAAAAkzwAKKvlZs",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 13001,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 12001 等级 1",
+   "code": "NKP2:AAIAAQkAyKIKRHycAYQAAAAAAkzwAEJYOnI",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 12001,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 12001 等级 15",
+   "code": "NKP2:AAIAAQkAyKIKfHycAYQAAAAAAkzwAB8iBDA",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 12001,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 13002 等级 1",
+   "code": "NKP2:AAIAAQkAyKIKhHycAYQAAAAAAkzwAF-_js4",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 13002,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 13002 等级 15",
+   "code": "NKP2:AAIAAQkAyKIKvHycAYQAAAAAAkzwAALFsIw",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 13002,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 12002 等级 1",
+   "code": "NKP2:AAIAAQkAyKIKxHycAYQAAAAAAkzwAOIyH2U",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 12002,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 12002 等级 15",
+   "code": "NKP2:AAIAAQkAyKIK_HycAYQAAAAAAkzwAL9IISc",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 12002,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10009 等级 1",
+   "code": "NKP2:AAIAAQkAyKILBHycAYQAAAAAAkzwAGLaSq8",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10009,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10009 等级 15",
+   "code": "NKP2:AAIAAQkAyKILPHycAYQAAAAAAkzwAD-gdO0",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10009,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10007 等级 1",
+   "code": "NKP2:AAIAAQkAyKILRHycAYQAAAAAAkzwAN9X2wQ",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10007,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10007 等级 15",
+   "code": "NKP2:AAIAAQkAyKILfHycAYQAAAAAAkzwAIIt5UY",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10007,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10008 等级 1",
+   "code": "NKP2:AAIAAQkAyKILhHycAYQAAAAAAkzwAMKwb7g",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10008,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10008 等级 15",
+   "code": "NKP2:AAIAAQkAyKILvHycAYQAAAAAAkzwAJ_KUfo",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10008,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10010 等级 1",
+   "code": "NKP2:AAIAAQkAyKILxHycAYQAAAAAAkzwAH89_hM",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10010,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10010 等级 15",
+   "code": "NKP2:AAIAAQkAyKIL_HycAYQAAAAAAkzwACJHwFE",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10010,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10012 等级 1",
+   "code": "NKP2:AAIAAQkAyKIMBHycAYQAAAAAAkzwAAcX4G8",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10012,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10012 等级 15",
+   "code": "NKP2:AAIAAQkAyKIMPHycAYQAAAAAAkzwAFpt3i0",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10012,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10013 等级 1",
+   "code": "NKP2:AAIAAQkAyKIMRHycAYQAAAAAAkzwALqaccQ",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10013,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10013 等级 15",
+   "code": "NKP2:AAIAAQkAyKIMfHycAYQAAAAAAkzwAOfgT4Y",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10013,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10015 等级 1",
+   "code": "NKP2:AAIAAQkAyKIMhHycAYQAAAAAAkzwAKd9xXg",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10015,
+       "level": 1
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "label": "魔方 10015 等级 15",
+   "code": "NKP2:AAIAAQkAyKIMvHycAYQAAAAAAkzwAPoH-zo",
+   "expect": {
+    "version": 2,
+    "payloadType": 0,
+    "fields": [
+     "equip",
+     "cube"
+    ],
+    "synchroLevel": 200,
+    "research": {
+     "class": {},
+     "corporation": {}
+    },
+    "characters": {
+     "5185": {
+      "cube": {
+       "resourceId": 10015,
+       "level": 15
+      },
+      "equipments": [
+       [
+        {
+         "functionType": "IncElementDmg",
+         "level": 15,
+         "value": 29.16
+        },
+        {
+         "functionType": "StatAtk",
+         "level": 7,
+         "value": 9
+        },
+        null
+       ],
+       [
+        {
+         "functionType": "StatCritical",
+         "level": 1,
+         "value": 2.3
+        },
+        null,
+        null
+       ],
+       [
+        null,
+        null,
+        null
+       ],
+       [
+        {
+         "functionType": "StatDef",
+         "level": 3,
+         "value": 6.18
+        },
+        {
+         "functionType": "StatAmmoLoad",
+         "level": 12,
+         "value": 73.04
+        },
+        null
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
    "label": "边界值：0 下限 + 全 8 项",
    "code": "NKP2:AAIAAf8AAQAAAAAAAAAAAABdyAAAAAEVqPhFPAAAAAIEAAAAAAAAMaUBnw",
    "expect": {
@@ -13286,7 +16132,7 @@
   },
   {
    "label": "表格：满 255 行",
-   "code": "NKP2:AAIB_5xs4-cvOYnMzmpzc5yc9OfnTzqB988qefPXn1TuJ7U_KftPgoBUB6BFAmgVQLoKUFaDFBug5QdoRUJqE9CihVQuoX0M6HE4mcdOTnLTnZ0E6GdHOmH-D8p388OetPdnXT659k9mfnO9n8T1aANAYf3QOoJUE6DVDChlQ5odTipxc4ychORnJTop0k6WdTOqnVzrJ1s68foP-ndTu53082edPSnpz352s8ieZPpn3z8J8g_2dtP3n8z-p_c_yf7O5XeUD6CFB6g_QroY0NKGtDacpOVnYTsZ2U7OdpPAniz7Z90_GeTQDoCUBaCNBmhHQkoS0KaG8-GfFPmnzz9J-s_6f_QAoG0DKC1BehBQhoWULaHdDxdyu6Xdzx13y8FeEu9XfrwF4a8SfQvFXjLx15C8leUvLH6j9iAI_cfwQAH8j-h___7__ONnHzl5zE5mc1ObnOTnpz86edQPvnlTz568-qdxPan5T9p8FAKgPQIoE0CqBdBSgrQYoN0HKDtCKhNQnoUUKqF1C-hnQ4nEzjpyc5ac7OgnQzo50w_wfkCD0-bP",
+   "code": "NKP2:AAIB_5xs4-cvOYnMzmpzc5yc9OfnTzqB988qefPXn1TuJ7U_KftPgoBUB6BFAmgVQLoKUFaDFBug5QdoRUJqE9CihVQuoX0M6HE4mcdOTnLTnZ0E6GdHOmH-D8p388OetPdnXT659k9mfnO9n8T1aANAYf3QOoJUE6DVDChlQ5odTipxc4ychORnJTop0k6WdTOqnVzrJ1s68foP-ndTu53082edPSnpz352s8ieZPpn3z8J8g_2dtP3n8z-p_c_yf7O5XeUD6CFB6g_QroY0NKGtDacpOVnYTsZ2U7OdpPAniz7Z90_GeTQDoCUBaCNBmhHQkoS0KaG8-GfFPmnzz9J-s_6f_QAoG0DKC1BehBQhoWULaHdDxdyu6Xdzx13y8FeEu9XfrwF4a8SfQvFXjLx15C8leUvLH6j9iAI_cfwQAH8j-h___7__Q9ofUP6IFEGiFRDnGzj5y85iczOanNznJz05-dPOoH3zyp589efVO4ntT8p-0-CgFQHoEUCaBVAugpQVoMUG6DlB2hFQmoT0KKFVC6hfQzocTiZx05OcsBgyQXA",
    "expect": {
     "version": 2,
     "payloadType": 1,
@@ -13492,6 +16338,13 @@
      "1023",
      "cn-exclusive-huapi",
      "cn-exclusive-yingning",
+     "5181",
+     "5182",
+     "5183",
+     "5184",
+     "5185",
+     "5186",
+     "5187",
      "5005",
      "5007",
      "5015",
@@ -13538,14 +16391,7 @@
      "5001",
      "5006",
      "5011",
-     "5014",
-     "5021",
-     "5024",
-     "5025",
-     "5027",
-     "5030",
-     "1020",
-     "1010"
+     "5014"
     ]
    }
   },
